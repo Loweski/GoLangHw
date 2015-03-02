@@ -5,15 +5,15 @@ import (
 	"fmt"
 )
 
-func swap(a *float64, b *float64) {
-	var temp *float64
+func swap(a *int, b *int) {
+	var temp *int
 	*temp = *a
 	*a = *b
 	*b = *temp
 }
 func main() {
-	x := 3.4
-	y := 4.1
+	x := 3
+	y := 4
 	swap(&x, &y)
 
 	fmt.Println("X is now ", x)
